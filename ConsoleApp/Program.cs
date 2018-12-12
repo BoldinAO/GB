@@ -10,20 +10,49 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            string name, firstName, age, growth, weight;
+            Person first = new Person();
             Console.Write("Имя: ");
-            name = Console.ReadLine();
+            first.Name = Console.ReadLine();
             Console.Write("Фамилия: ");
-            firstName = Console.ReadLine();
+            first.FirstName = Console.ReadLine();
             Console.Write("Возраст: ");
-            age = Console.ReadLine();
+            first.Age = Console.ReadLine();
             Console.Write("Рост: ");
-            growth = Console.ReadLine();
+            first.Growth = Console.ReadLine();
             Console.Write("Вес: ");
-            weight = Console.ReadLine();
-            Console.Clear();
-            Console.Write("Имя: {0}\nФамилия{1}\nВозраст: {2}\nРост: {3}\nВес: {4}", name, firstName, age, growth, weight);
+            first.Weight = Console.ReadLine();
+            Console.Write($"Имя: {first.Name}\nФамилия: {first.FirstName}\nВозраст: {first.Age}\nРост: {first.Growth}\nВес: {first.Weight}");
             Console.ReadKey();
+        }
+    }
+
+    class Person
+    {
+        private string name, firstName, age, growth, weight;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        public string FirstName
+        {
+            get { return firstName; }
+            set { firstName = value; }
+        }
+        public string Age
+        {
+            get { return age; }
+            set { age = value; }
+        }
+        public string Growth
+        {
+            get { return growth; }
+            set { growth = value; }
+        }
+        public string Weight
+        {
+            get { return weight; }
+            set { weight = value; }
         }
     }
 }
