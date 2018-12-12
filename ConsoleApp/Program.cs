@@ -21,11 +21,8 @@ namespace ConsoleApp
             growth = Console.ReadLine();
             Console.Write("Вес: ");
             weight = Console.ReadLine();
-            Console.Write("Имя: " + name +
-                "\n Фамилия: " + firstName +
-                "\n Возраст: " + age +
-                "\n Рост: " + growth +
-                "\n Вес: " + weight);
+            Console.Clear();
+            Console.Write("Имя: {0}\nФамилия{1}\nВозраст: {2}\nРост: {3}\nВес: {4}", name, firstName, age, growth, weight);
             Console.ReadKey();
         }
     }
