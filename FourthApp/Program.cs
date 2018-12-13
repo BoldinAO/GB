@@ -1,4 +1,10 @@
-﻿using System;
+﻿//Болдин
+/*
+Написать программу обмена значениями двух переменных.
+а) с использованием третьей переменной;
+б) *без использования третьей переменной.
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

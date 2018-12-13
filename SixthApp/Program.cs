@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Болдин
+/*
+*Создать класс с методами, которые могут пригодиться в вашей учебе (Print, Pause).
+*/
+using System;
 
 namespace SixthApp
 {
