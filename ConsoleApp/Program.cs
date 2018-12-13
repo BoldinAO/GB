@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SixthApp;
 
 namespace ConsoleApp
 {
@@ -10,25 +11,28 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
+            Prog p = new Prog();
             Person first = new Person();
-            Console.Write("Имя: ");
+
+            p.Print("Имя: ");
             first.Name = Console.ReadLine();
-            Console.Write("Фамилия: ");
+            p.Print("Фамилия: ");
             first.FirstName = Console.ReadLine();
-            Console.Write("Возраст: ");
+            p.Print("Возраст: ");
             first.Age = Console.ReadLine();
-            Console.Write("Рост: ");
+            p.Print("Рост: ");
             first.Growth = Console.ReadLine();
-            Console.Write("Вес: ");
+            p.Print("Вес: ");
             first.Weight = Console.ReadLine();
-            Console.Write($"Имя: {first.Name}\nФамилия: {first.FirstName}\nВозраст: {first.Age}\nРост: {first.Growth}\nВес: {first.Weight}");
-            Console.ReadKey();
+            p.Print($"Имя: {first.Name}\nФамилия: {first.FirstName}\nВозраст: {first.Age}\nРост: {first.Growth}\nВес: {first.Weight}");
+            p.Pause();
         }
     }
 
     class Person
     {
         private string name, firstName, age, growth, weight;
+        
         public string Name
         {
             get { return name; }
